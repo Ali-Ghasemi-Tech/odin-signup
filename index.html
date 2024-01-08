@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="logo-section"></section>
+    <section class="form-section">
+      <span>
+        this is not a real online service! but you can try this if you want to
+        step up in your life
+      </span>
+      <span> you know you want it </span>
+      <form id="form" action="">
+        <h2>Let's do it!</h2>
+        <div></div>
+        <div class="input-container">
+          <label for="first-name">FIRST NAME</label>
+          <input
+            required
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="your name ..."
+          />
+        </div>
+        <div class="input-container">
+          <label for="last-name">LAST NAME</label>
+          <input
+            required
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="your last name"
+          />
+        </div>
+        <div class="input-container">
+          <label for="email">EMAIL</label>
+          <input
+            required
+            type="email"
+            name="email"
+            id="email"
+            placeholder="abcd@gmail.com "
+          />
+        </div>
+        <div class="input-container">
+          <label for="phoneNumber">PHONE NUMBER</label>
+          <input
+            required
+            pattern="/(09)\d{9}/"
+            type="number"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="09123456789"
+          />
+        </div>
+        <div class="input-container">
+          <label for="password">PASSWORD</label>
+          <input
+            onchange="{handelChange()}"
+            required
+            pattern="^(?=.*[A-Z])(?=.*\d).{6,12}$"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Abcd12!"
+          />
+        </div>
+        <div class="input-container">
+          <label for="confirm-password">CONFORM PASSWORD</label>
+          <input
+            required
+            onchange="{handelChange()}"
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            placeholder="conform password"
+          />
+        </div>
+      </form>
+      <button id="button" onclick="{handelChange()}" form="form" type="submit">
+        Create Account
+      </button>
+      <span class="login">already have an account? <a href="">login</a></span>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>

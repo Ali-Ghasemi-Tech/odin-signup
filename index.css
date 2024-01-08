@@ -1,0 +1,101 @@
+html {
+  background-color: black;
+}
+body {
+  display: flex;
+  width: 80vw;
+  margin: auto;
+}
+span {
+  font-size: clamp(1em, 2vw, 1.5em);
+}
+.logo-section {
+  background-image: url("./andy-holmes-LUpDjlJv4_c-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  flex: 1;
+  background-color: gray;
+  height: 100vh;
+}
+.form-section {
+  flex: 2;
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  overflow: hidden;
+}
+.form-section > span {
+  padding-left: 1vw;
+}
+.form-section > button {
+  background-color: rgb(86, 33, 233);
+  color: #ffffff;
+  height: 2.5vw;
+  width: 12vw;
+  margin-left: 1vw;
+  margin-bottom: 0.5vw;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.1s ease-in;
+  font-weight: bold;
+  font-size: clamp(0.3em, 1vw, 1em);
+  box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.form-section > button:hover {
+  cursor: pointer;
+  border: 1px solid rgb(86, 33, 233);
+  background-color: white;
+  color: rgb(86, 33, 233);
+}
+.form-section > button:active {
+  background-color: rgb(218, 218, 218);
+}
+form {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: start;
+  width: 100%;
+  padding-bottom: 1vw;
+  padding-left: 1vw;
+  margin-bottom: 1vw;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin-top: 1vw;
+}
+h2 {
+  margin: none;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+.input-container > input {
+  max-width: 15vw;
+  padding: 0.5vw;
+  height: 0.5vw;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.input-container > input::-webkit-inner-spin-button,
+.input-container > input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.input-container > input:focus {
+  box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.login {
+  font-size: clamp(0.5em, 1vw, 1em);
+}
+.input-container > input:valid {
+  border: 1px solid blue;
+}
+.input-container > input:invalid {
+  border: 1px solid red;
+}
+label {
+  font-size: clamp(0.5em, 1vw, 0.9em);
+}
